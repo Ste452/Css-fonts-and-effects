@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+@font-face {
+  font-family: "freshman";
+  src: url("../assets/fonts/freshman-webfont.woff2") format("woff2"), url("../assets/fonts/freshman-webfont.woff") format("woff"), url("../assets/fonts/Freshman.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
+}
+.nav__item {
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  position: relative;
+}
+.nav__item:hover {
+  color: #f58220;
+  animation: toTop;
+  animation-duration: 1s;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #195484;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+article h1 {
+  color: #f58220;
+  font-size: 3rem;
+  text-align: left;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "freshman", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-shadow: 1px 2px 8px #FFFFFF;
+}
+
+#root,
+header,
+section,
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+@keyframes toTop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1rem;
+  }
+}
+header .container {
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header .container .hero {
+  align-items: flex-end;
+  background-image: url("../assets/images/banner-lance-me.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 45rem;
+  display: flex;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+header .container .hero h1 {
+  padding: 1rem 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+#sobre {
+  background-color: none;
+}
+#sobre .container {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  padding: 0 2rem 2rem;
+}
+#sobre article p {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+#produtos {
+  background-color: #dcdcdc;
+}
+
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.vitrine__item {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 20rem;
+  padding: 1rem;
+  position: relative;
+}
+.vitrine__item:hover {
+  animation: toTop;
+  animation-duration: 1s;
+  box-shadow: 0 0 2px 2px rgba(25, 25, 25, 0.2);
+}
+.vitrine__image {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.vitrine__title {
+  font-size: 2rem;
+  color: #f58220;
+  text-align: center;
+  width: 100%;
+}
+.vitrine__desc {
+  color: #454545;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+.vitrine__button {
+  box-shadow: 0 0 2px 2px rgba(0, 150, 255, 0.2);
+  background-color: #195484;
+  border-radius: 1rem;
+  border: 1px solid #195484;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.vitrine__button:hover {
+  box-shadow: 0 0 2px 2px #f58220;
+}
+
+#como-funciona {
+  background: #ffffff;
+}
+
+.steps {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.steps__item {
+  margin: 1rem;
+  width: calc(16% - 1rem);
+  text-align: center;
+}
+.steps__item span {
+  color: #f58220;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+footer p a {
+  color: #f58220;
+}
+
+/*# sourceMappingURL=styles.css.map */
